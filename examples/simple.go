@@ -13,9 +13,9 @@ func main() {
 	for i := 0; i < 7; i++ {
 		allowed, _ := limiter.Allow("user:123")
 		if allowed {
-			fmt.Println("✅ Request allowed")
+			fmt.Println("Request allowed")
 		} else {
-			fmt.Println("❌ Too many requests")
+			fmt.Println("Too many requests")
 		}
 	}
 }
